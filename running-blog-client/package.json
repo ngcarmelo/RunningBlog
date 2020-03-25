@@ -1,0 +1,41 @@
+{
+  "name": "web-personal-client",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@tinymce/tinymce-react": "^3.3.2",
+    "antd": "^3.23.2",
+    "jwt-decode": "^2.2.0",
+    "moment": "^2.24.0",
+    "node-sass": "^4.12.0",
+    "query-string": "^6.10.1",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-drag-sortable": "^1.0.6",
+    "react-dropzone": "^10.2.1",
+    "react-helmet": "^5.2.1",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "3.1.1"
+  },
+  "scripts": {
+    "dev": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
