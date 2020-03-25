@@ -112,9 +112,9 @@ function uploadAvatar(req, res) {
 
         if (req.files) {
           let filePath = req.files.avatar.path;
-          let fileSplit = filePath.split("/");
-          let fileName = fileSplit[2];
-
+          let fileName = filePath.replace(/^.*[\\\/]/, "");
+          //  let fileSplit = filePath.split("/");
+          // let fileName = fileSplit[2];
           let extSplit = fileName.split(".");
           let fileExt = extSplit[1];
 
@@ -182,7 +182,7 @@ async function updateUser(req, res) {
       if (!userUpdate) {
         res.status(404).send({ message: "User not found." });
       } else {
-        res.status(200).send({ message: "Uer updated successfully." });
+        res.status(200).send({ message: "User updated successfully." });
       }
     }
   });
